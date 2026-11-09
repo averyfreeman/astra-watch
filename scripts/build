@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+astra_source_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+cd "$astra_source_root"
+cargo test --locked --all-targets
+cargo build --locked --release
+mkdir -p "$astra_source_root/plugins/astra-watch/runtime"
+cp "$astra_source_root/target/release/astra-watch" "$astra_source_root/plugins/astra-watch/runtime/astra-watch"
+chmod 755 "$astra_source_root/plugins/astra-watch/runtime/astra-watch" "$astra_source_root/plugins/astra-watch/scripts/astra-watch"
+"$astra_source_root/plugins/astra-watch/scripts/astra-watch" --version

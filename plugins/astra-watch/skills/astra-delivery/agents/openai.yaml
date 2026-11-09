@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astra Watch Delivery"
+  short_description: "Deliver bounded slices with current evidence"
+  default_prompt: "Use $astra-delivery for a bounded verified slice under this project's accepted mission."

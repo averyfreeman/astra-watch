@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astra Watch Recovery"
+  short_description: "Reconcile evidence before resuming a task"
+  default_prompt: "Use $astra-recover to reconcile and resume this project's interrupted Astra Watch task."

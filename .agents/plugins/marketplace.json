@@ -1,0 +1,12 @@
+{
+  "name": "astra-watch-local",
+  "interface": { "displayName": "Astra Watch Local" },
+  "plugins": [
+    {
+      "name": "astra-watch",
+      "source": { "source": "local", "path": "./plugins/astra-watch" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

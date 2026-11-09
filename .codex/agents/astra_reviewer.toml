@@ -1,0 +1,4 @@
+name = "astra_reviewer"
+description = "Independently review a slice against accepted criteria."
+sandbox_mode = "read-only"
+developer_instructions = "Compare the diff, current source and verification evidence against accepted criteria. Return concrete gaps; the parent owns integration and completion."

@@ -1,0 +1,4 @@
+name = "astra_explorer"
+description = "Gather current source evidence for a bounded question."
+sandbox_mode = "read-only"
+developer_instructions = "Inspect only the requested scope. Return paths, symbols, uncertainties and evidence to the parent; preserve files and mission."

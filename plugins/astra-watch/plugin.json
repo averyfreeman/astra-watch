@@ -1,0 +1,22 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "astra-watch",
+  "version": "0.1.0",
+  "description": "Native-first project bootstrap, fresh code evidence, and auditable long-running development contracts.",
+  "license": "Apache-2.0",
+  "keywords": ["codex", "bootstrap", "code-context", "verification"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Astra Watch",
+        "shortDescription": "Project evidence and native-first delivery",
+        "longDescription": "Bootstrap a connected project, retrieve current source, and keep multi-turn work aligned with immutable contracts and executed verification. Codex retains execution, permissions, subagents, worktrees and scheduling.",
+        "developerName": "Local development",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": ["Use Astra Watch to bootstrap this connected project and identify the missing mission parameters.", "Use Astra Watch to deliver a bounded, evidence-verified slice under this project's accepted mission."],
+        "brandColor": "#26466D"
+      }
+    }
+  }
+}

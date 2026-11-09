@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+astra_package_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+astra_binary="$astra_package_root/runtime/astra-watch"
+if [ ! -x "$astra_binary" ]; then
+  echo 'Astra Watch binary is missing. Build/package the plugin using scripts/build before installing or refreshing the marketplace.' >&2
+  exit 1
+fi
+exec "$astra_binary" "$@"

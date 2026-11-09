@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "astra-watch": {
+      "type": "stdio",
+      "command": "${PLUGIN_ROOT}/scripts/astra-watch",
+      "args": ["serve"]
+    }
+  }
+}

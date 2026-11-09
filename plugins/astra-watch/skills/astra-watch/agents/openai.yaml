@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astra Watch Setup"
+  short_description: "Bootstrap a mission-ready connected project"
+  default_prompt: "Use $astra-watch to bootstrap this connected project and settle its missing mission parameters."

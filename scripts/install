@@ -1,0 +1,10 @@
+#!/bin/sh
+set -eu
+astra_source_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+astra_launcher="$astra_source_root/plugins/astra-watch/scripts/astra-watch"
+if ! "$astra_launcher" --version >/dev/null 2>&1; then
+  "$astra_source_root/scripts/build"
+fi
+codex plugin marketplace add "$astra_source_root"
+codex plugin add astra-watch@astra-watch-local
+echo 'Astra Watch installed. Connect your project and invoke the Astra Watch setup skill; review project trust/config before enabling writes.'

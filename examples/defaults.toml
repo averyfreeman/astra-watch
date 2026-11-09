@@ -1,0 +1,30 @@
+# Optional central preference seed: ~/.config/astra-watch/defaults.toml
+# Project mission deliberately remains empty; never inherit another project's outcome.
+[astra_watch]
+schema_version = 1
+prompt_file = ".astra-watch/project_prompt.md"
+languages = []
+
+[astra_watch.mission]
+outcome = ""
+non_goals = []
+constraints = []
+criteria = []
+
+[astra_watch.runtime]
+max_slices = 80
+max_retries_per_check = 2
+
+[astra_watch.knowledge]
+max_files = 10000
+max_file_bytes = 2000000
+max_chunks = 30000
+max_hits = 8
+
+[astra_watch.git]
+protected_branches = ["main", "master"]
+checkpoint_mode = "verified-slice-proposal"
+
+[astra_watch.docs]
+pages_enabled = false
+recordings_enabled = false

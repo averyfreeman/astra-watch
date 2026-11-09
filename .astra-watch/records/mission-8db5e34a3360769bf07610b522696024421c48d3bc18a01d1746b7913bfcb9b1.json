@@ -1,0 +1,34 @@
+{
+  "constraints": [
+    "Keep each delivery slice within its explicit relative write_scope; do not widen it silently.",
+    "Preserve user-owned files and existing public plugin/tool contracts unless an accepted task requires a reviewed change.",
+    "Review configured verification argv and run checks through the native shell.",
+    "Before queueing each slice, define its specific acceptance criteria and bind executable criteria to relevant configured checks; profile changes invalidate existing task contracts.",
+    "Review changed behavior and the diff before completion; v0.1 cannot record manual review as passing executable evidence.",
+    "Do not perform Git writes, plugin installation, release, publication, deployment, or external service actions without separate user authorization.",
+    "Use Git checkpoint controls only from a valid isolated worktree."
+  ],
+  "criteria": [
+    {
+      "check": "rust-format",
+      "description": "Rust source passes rustfmt check.",
+      "id": "rust-format"
+    },
+    {
+      "check": "rust-lint",
+      "description": "All Rust targets pass Clippy with warnings denied.",
+      "id": "rust-lint"
+    },
+    {
+      "check": "rust-tests",
+      "description": "The locked all-target Rust test suite passes.",
+      "id": "rust-tests"
+    }
+  ],
+  "non_goals": [
+    "Replace Codex native execution, permissions, planning, delegation, worktrees, or scheduling.",
+    "Add an automatic background model worker or claim unsupported integrations as verified.",
+    "Publish, release, deploy, install plugins, or use external services without separate authorization."
+  ],
+  "outcome": "Ongoing improvement and maintenance of Astra Watch as a reliable, native-first Codex plugin for project bootstrap and evidence-bound development."
+}

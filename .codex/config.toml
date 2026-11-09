@@ -1,0 +1,1 @@
+plugins = { "astra-watch@astra-watch-local" = { enabled = true } }
